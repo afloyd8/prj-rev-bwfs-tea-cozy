@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  background-color: black;
+  opacity: 0.9;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  width: 100%;
+  height: 69px;
+  align-items: center;
+  background-color: black;
+  z-index: 5;
+}
+
+.logo {
+  padding-left: 10px;
+  height: 50px;
+  width: 80%; /* NOTE: This sets the box for the logo to take up 80% of the space */
+  display: inline-flex; /* NOTE: Need to set the display to inline-flex or the logo will not resize */
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+nav {
+  text-align: right;
+  display: inline-flex;
+}
+
+a {
+  color: seashell;
+}
+
+.main {
+  position: relative;
+  flex-direction: column;
+  padding-top: 69px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#mission {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+  height: 700px;
+  width: 1200px;
+  display: inline-flex; /* NOTE: Setting the display to inline flex is the only way I could get the image to center */
+}
+
+#mission .content {
+  width: 100%;
+  background-color: black;
+  margin: auto; /* NOTE: Setting the margin to auto is what made the background around the next not take up the entire block */
+}
+
+#mission h2 {
+  margin: 0px;
+  padding: 10px;
+}
+
+#mission h4 {
+  padding-top: 15px;
+  margin: 10px;
+}
+
+#feature {
+  height: 700px;
+  width: 1000px;
+  margin: auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.tea-type {
+  padding: 5px;
+}
+
+.tea-type img {
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+  display: block;
+}
+
+#locations {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+  height: 500px;
+  width: 1200px;
+  padding-top: 70px;
+  display: inline-block; /* NOTE: This set the picture in the center of the page without putting the location blocks on 2 lines */
+}
+
+#locations h2 {
+  display: block;
+  margin: 0px;
+  padding: 15px;
+}
+
+.location {
+  display: flex;
+  opacity: 1.0;
+  padding: 10px;
+  margin: 5px 40px;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  flex-basis: 280px;
+}
+
+.footer {
+  height: 200px;
+}
+
+.footer h2 {
+  margin: 0px;
+  padding: 10px;
+  display: block;
+}
+
+.footer h5 {
+  display: block;
+  font-weight: bold;
+}
+
+.copyright {
+  text-align: left;
+  padding-left: 20px;
+}
